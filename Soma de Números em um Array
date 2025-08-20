@@ -1,1 +1,16 @@
+#include <stdio.h>
 
+int main(){
+    int array[5] = {0};
+    int n, soma = 0;
+
+    for(int i=0; i<5; i++){
+        scanf("%d", &n);
+        array[i] = n;
+        soma += n;
+    }
+
+    printf("%d\n", soma);
+
+    return 0;
+}
