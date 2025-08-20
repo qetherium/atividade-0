@@ -1,1 +1,21 @@
+#include <stdio.h>
 
+int main(){
+    char T;
+    float temp, tempConvert;
+
+    printf("A temperatura a ser indicada está em Celsius(C) ou Fahrenheit(F)? (C/F)\n");
+    scanf("%c", &T);
+
+    printf("Informa a temperatura:\n");
+    scanf("%f", &temp);
+
+    if(T == 'C')
+        tempConvert = temp*9/5 + 32;
+    else
+        tempConvert = (temp - 32)*5/9;
+
+    printf("A temperatura convertida é: %.1f\n", tempConvert);
+
+    return 0;
+}
